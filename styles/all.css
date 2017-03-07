@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
 body {
@@ -77,4 +77,51 @@ footer {
 	font-style: italic;
 	text-align: center;
 	margin-bottom: 1em;
+}
+
+#blockFormulaireConnexion ul, #blockFormulaireInscription ul   {
+	list-style: none;
+}
+
+fieldset#blockFormulaireConnexion {
+	float:left;
+	width: 45%;
+	margin-right: 20%
+}
+
+fieldset#blockFormulaireInscription {
+	width: 29%
+}
+
+#blockFormulaireConnexion input {
+	width: 15em;
+}
+#blockFormulaireConnexion label {
+	display: inline-block;
+	width: 8em;
+	padding-left: 0.3em;
+}
+/* Aligner les inputs d'un formulaire  */
+#login-submit {
+	display: block;
+	margin: auto;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+#blockFormulaireInscription label {
+	float: left;
+	padding-left: 0.3em;
+}
+#blockFormulaireInscription input {
+	width: 16em;
+	margin-left: 0.3em
+}
+
+#register-submit {
+	display: block;
+	margin: auto;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	border-color: red;
 }
