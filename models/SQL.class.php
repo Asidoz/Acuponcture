@@ -6,7 +6,7 @@ class SQL
 	private $infos;
 	private $bdd;
 
-	function __construct() {
+	function __construct($mode) {
 
 		// Récupération des infos de connexion
 		$tabfich=file("conf/bdd.conf");
@@ -15,8 +15,16 @@ class SQL
 			$infos[$tmp[0]] = str_replace("\n", "", $tmp[1]);
 		} 
 
+		if($mode == "write") {
+			$user = $infos["userw"];
+			$mdp = $infos["mdpw"];
+		} else {
+			$user = $infos["userr"];
+			$mdp = $infos["mdpr"];
+		}
+
 		// Connexion à la BDD
-		$this->bdd = new PDO($infos["type"].":host=".$infos["host"].";dbname=".$infos["db"].";charset=utf8", $infos["user"], $infos["mdp"]);
+		$this->bdd = new PDO($infos["type"].":host=".$infos["host"].";dbname=".$infos["db"].";charset=utf8", $user, $mdp);
 
 	}
 
