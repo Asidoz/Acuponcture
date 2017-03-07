@@ -10,7 +10,8 @@ spl_autoload_register(function ($classname) {
 });
 
 // BDD
-$bdd = new SQL();
+$bddr = new SQL("read");
+$bddw = new SQL("write");
 
 // Page
 if(isset($_GET["p"])) {
