@@ -3,28 +3,28 @@
 class SQL 
 {
 	
-	private $infos;
+	private $type = "mysql";
+	private $host = "localhost";
+	private $db = "projet";
+	private $userR = "readProjet";
+	private $mdpR = "readTLI2017";
+	private $userW = "phpProjet";
+	private $mdpW = "ProjetTLI2017";
+	
 	private $bdd;
 
 	function __construct($mode) {
 
-		// Récupération des infos de connexion
-		$tabfich=file("conf/bdd.conf");
-		for( $i = 0 ; $i < count($tabfich) ; $i++ )	{
-			$tmp = split("=",$tabfich[$i]);
-			$infos[$tmp[0]] = str_replace("\n", "", $tmp[1]);
-		} 
-
 		if($mode == "write") {
-			$user = $infos["userw"];
-			$mdp = $infos["mdpw"];
+			$user = $this->userW;
+			$mdp = $this->mdpW;
 		} else {
-			$user = $infos["userr"];
-			$mdp = $infos["mdpr"];
+			$user = $this->userR;
+			$mdp = $this->mdpR;
 		}
 
 		// Connexion à la BDD
-		$this->bdd = new PDO($infos["type"].":host=".$infos["host"].";dbname=".$infos["db"].";charset=utf8", $user, $mdp);
+		$this->bdd = new PDO($this->type.":host=".$this->host.";dbname=".$this->db.";charset=utf8", $user, $mdp);
 
 	}
 

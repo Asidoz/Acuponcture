@@ -11,7 +11,7 @@ class Page
 		// Récupération de la liste des pages
 		$tabfich=file("conf/pages.conf");
 		for( $i = 0 ; $i < count($tabfich) ; $i++ )	{
-			$tmp = split(":",$tabfich[$i]);
+			$tmp = preg_split("/:/",$tabfich[$i]);
 			$listeP[$tmp[0]] = str_replace("\n", "", $tmp[1]);
 		} 
 
