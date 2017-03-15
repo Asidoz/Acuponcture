@@ -32,16 +32,15 @@
     </section>
 
     <section id="infos">
-        <h2>Les p'tites infos</h2>
-        <article>
-            <h3>Nos horaires</h3>
-            <p>Ouvert le XX de XXh à XXh !</p>
-        </article>
+        <h2>Les infos</h2>
 
+        {foreach from=$listeNews key=i item=n}
         <article>
-            <h3>New !</h3>
-            <p>Nouvelles aiguilles disponibles !</p>
+            <h3>{$n["titreNews"]}</h3>
+            <p>{$n["texteNews"]}</p>
         </article>
+        {/foreach}
+        
     </section>
 </div>
 

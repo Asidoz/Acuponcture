@@ -25,7 +25,7 @@ class SQL
 
 	public function sql($requete) {
 		$reponse = $this->bdd->query($requete);
-		return $reponse->fetch();
+		return $reponse->fetchAll();
 	}
 
 	public function test() {
