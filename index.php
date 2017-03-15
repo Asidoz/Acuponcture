@@ -20,13 +20,21 @@ if(isset($_GET["p"])) {
 	$page = new Page();
 }
 
+// Vérifier existance du controler
 //include("controlers/".$page->getPage().".php");
+
+if(file_exists("controlers/".$page->getPage().".php")) {
+	include("controlers/".$page->getPage().".php");
+} else { 
+	echo "<h1>Erreur lors du chargement du Controler de la page '".$page->getPage()."'.</h1>";
+	exit;
+}
 
 // Traiter les données en faisant des includes
 // include("traitement".$page->getPage().".php");
 // le fichier inclue ajoute les paramètres à envoyer au template
 
-include("./controlers/news.php");
+include("controlers/news.php");
 
 $smarty->display("view/".$page->getPage().".html");
 
