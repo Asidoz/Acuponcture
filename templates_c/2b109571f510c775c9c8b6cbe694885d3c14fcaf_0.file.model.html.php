@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-03-15 18:50:13
+/* Smarty version 3.1.30, created on 2017-03-15 19:26:30
   from "C:\wamp64\www\Acuponcture\view\model.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58c98ce5f2f004_30670261',
+  'unifunc' => 'content_58c9956610bf58_81714270',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2b109571f510c775c9c8b6cbe694885d3c14fcaf' => 
     array (
       0 => 'C:\\wamp64\\www\\Acuponcture\\view\\model.html',
-      1 => 1489603812,
+      1 => 1489605989,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_58c98ce5f2f004_30670261 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58c9956610bf58_81714270 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -30,7 +30,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2867358c98ce5f00a59_11491777', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1670558c995660d8cd0_87602238', 'title');
 ?>
 Association des Acupuncteurs soucieux de l'Accessibilité</title>
     <link rel="stylesheet" href="/styles/all.css">
@@ -45,8 +45,9 @@ Association des Acupuncteurs soucieux de l'Accessibilité</title>
         <!-- Menu de navigation -->
         <nav>
             <ul>
+                <li><a href="/" title="">Accueil</a></li>
                 <li><a href="" title="">Les Symptômes</a></li>
-                <li><a href="" title="">Recherche de pathologies</a></li>
+                <li><a href="/page/pathologies.html" title="">Les Pathologies</a></li>
                 <li><a href="" title="">Me soigner</a></li>
                 <li>Mon Compte</li>
             </ul>
@@ -58,7 +59,7 @@ Association des Acupuncteurs soucieux de l'Accessibilité</title>
 <div id="container">
     <section id="contenu">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1194258c98ce5f095e4_57688567', 'contenu');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1815058c995660e2ba6_59640407', 'contenu');
 ?>
 
     </section>
@@ -95,14 +96,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 </body>
 </html><?php }
 /* {block 'title'} */
-class Block_2867358c98ce5f00a59_11491777 extends Smarty_Internal_Block
+class Block_1670558c995660d8cd0_87602238 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'title'} */
 /* {block 'contenu'} */
-class Block_1194258c98ce5f095e4_57688567 extends Smarty_Internal_Block
+class Block_1815058c995660e2ba6_59640407 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
