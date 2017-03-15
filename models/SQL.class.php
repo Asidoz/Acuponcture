@@ -3,14 +3,6 @@
 class SQL 
 {
 	
-	/*private $type = "mysql";
-	private $host = "localhost";
-	private $db = "projet";
-	private $userR = "readProjet";
-	private $mdpR = "readTLI2017";
-	private $userW = "phpProjet";
-	private $mdpW = "ProjetTLI2017";*/
-	
 	private $bdd;
 	private $infos;
 
