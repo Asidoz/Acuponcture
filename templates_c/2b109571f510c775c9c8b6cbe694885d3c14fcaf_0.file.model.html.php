@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-03-15 18:09:09
+/* Smarty version 3.1.30, created on 2017-03-15 18:31:13
   from "C:\wamp64\www\Acuponcture\view\model.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58c98345ad4783_61229144',
+  'unifunc' => 'content_58c9887108f186_42540714',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2b109571f510c775c9c8b6cbe694885d3c14fcaf' => 
     array (
       0 => 'C:\\wamp64\\www\\Acuponcture\\view\\model.html',
-      1 => 1489601348,
+      1 => 1489601362,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_58c98345ad4783_61229144 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58c9887108f186_42540714 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -30,7 +30,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12058c98345aa7369_98887812', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_825358c98871063017_54113388', 'title');
 ?>
 Association des Acupuncteurs soucieux de l'Accessibilité</title>
     <link rel="stylesheet" href="styles/all.css">
@@ -58,14 +58,14 @@ Association des Acupuncteurs soucieux de l'Accessibilité</title>
 <div id="container">
     <section id="contenu">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2952158c98345aaf974_07139246', 'contenu');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5058c9887106b123_83572801', 'contenu');
 ?>
 
     </section>
 
     <section id="infos">
         <h2>Les infos</h2>
-        
+
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['listeNews']->value, 'n', false, 'i');
 if ($_from !== null) {
@@ -83,17 +83,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['i']->value => $_smarty_tpl->tpl_vars[
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
-
-        <!--<h2>Les p'tites infos</h2>
-        <article>
-            <h3>Nos horaires</h3>
-            <p>Ouvert le XX de XXh à XXh !</p>
-        </article>
-
-        <article>
-            <h3>New !</h3>
-            <p>Nouvelles aiguilles disponibles !</p>-->
-        </article>
+        
     </section>
 </div>
 
@@ -105,14 +95,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 </body>
 </html><?php }
 /* {block 'title'} */
-class Block_12058c98345aa7369_98887812 extends Smarty_Internal_Block
+class Block_825358c98871063017_54113388 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'title'} */
 /* {block 'contenu'} */
-class Block_2952158c98345aaf974_07139246 extends Smarty_Internal_Block
+class Block_5058c9887106b123_83572801 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>

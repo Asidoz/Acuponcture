@@ -9,15 +9,11 @@ class Page
 	function __construct($newP="") {
 
 		// Récupération de la liste des pages
-		$tabfich=file("conf/pages.conf");
-		for( $i = 0 ; $i < count($tabfich) ; $i++ )	{
-			$tmp = preg_split("/:/",$tabfich[$i]);
-			$listeP[$tmp[0]] = str_replace("\n", "", $tmp[1]);
-		} 
+		$this->listeP = parse_ini_file("conf/pages.ini");
 
 		// Vérification sur la page existe
-		if(isset($listeP[$newP])) {
-			$this->p = $listeP[$newP];
+		if(isset($this->listeP[$newP])) {
+			$this->p = $this->listeP[$newP];
 		}
 
 	}
