@@ -26,6 +26,8 @@ if(isset($_GET["p"])) {
 // include("traitement".$page->getPage().".php");
 // le fichier inclue ajoute les paramètres à envoyer au template
 
+include("./controlers/news.php");
+
 $smarty->display("view/".$page->getPage().".html");
 
 ?>
