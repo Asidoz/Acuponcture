@@ -58,6 +58,10 @@ section#contenu {
 	float: left;
 }
 
+section#contenu ul {
+	margin-left: 30px;
+}
+
 section#infos {
 	width: 30%;
 	float: right;
@@ -78,6 +82,8 @@ footer {
 	text-align: center;
 	margin-bottom: 1em;
 }
+
+/***************************************************/
 
 #blockFormulaireConnexion ul, #blockFormulaireInscription ul   {
 	list-style: none;

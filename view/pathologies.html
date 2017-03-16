@@ -14,7 +14,7 @@
 				<ul>
 			{/if}
 
-				<li>{$p["desc"]}</li>
+				<li><a href="/pathologie/{$p['idP']}.html">{$p["desc"]}</a></li>
 
 			{if $lastMer ne $p["nom"]}
 				{$lastMer=$p["nom"]}

@@ -20,6 +20,10 @@ if(isset($_GET["p"])) {
 	$page = new Page();
 }
 
+// Test
+/*$pathologie = new Pathologie(10,$bddr);
+echo $pathologie->getDesc();*/
+
 if(file_exists("controlers/".$page->getPage().".php")) {
 	include("controlers/".$page->getPage().".php");
 } else { 
