@@ -17,10 +17,12 @@
         <nav>
             <ul>
                 <li><a href="/" title="">Accueil</a></li>
-                <li><a href="" title="">Les Symptômes</a></li>
                 <li><a href="/page/pathologies.html" title="">Les Pathologies</a></li>
-                <li><a href="" title="">Me soigner</a></li>
-                <li>Mon Compte</li>
+                {if $user_id eq -1}
+                    <li>Me connecter</li>
+                {else}
+                    <li>Mon Compte</li>
+                {/if}
             </ul>
         </nav>
     </div>
@@ -47,7 +49,7 @@
 
 <!-- Footer -->
 <footer>
-    Created by Corentin G. and Florian L. - &copy; 2017
+    <a href="/page/about.html">A propos</a> - &copy; 2017
 </footer>
 
 </body>
