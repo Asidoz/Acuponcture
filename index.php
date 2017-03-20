@@ -1,15 +1,17 @@
 <?php 
-ini_set('display_errors', 1);
-
-require_once("models/sql.class.php");
-require_once("models/page.class.php");
-require("tpl/Smarty.class.php");
-
-// BDD
-$bdd = new SQL();
 
 // SMARTY
+require("tpl/Smarty.class.php");
 $smarty = new Smarty();
+
+spl_autoload_register(function ($classname) {
+    $filename = "models/". $classname .".class.php";
+    include_once($filename);
+});
+
+// BDD
+$bddr = new SQL("read");
+$bddw = new SQL("write");
 
 // Page
 if(isset($_GET["p"])) {
