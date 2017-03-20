@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{block name=title}{/block}Association des Acupuncteurs soucieux de l'Accessibilité</title>
-    <link rel="stylesheet" href="styles/all.css">
+    <link rel="stylesheet" href="/styles/all.css">
 </head>
 <body>
 
@@ -16,8 +16,9 @@
         <!-- Menu de navigation -->
         <nav>
             <ul>
+                <li><a href="/" title="">Accueil</a></li>
                 <li><a href="" title="">Les Symptômes</a></li>
-                <li><a href="" title="">Recherche de pathologies</a></li>
+                <li><a href="/page/pathologies.html" title="">Les Pathologies</a></li>
                 <li><a href="" title="">Me soigner</a></li>
                 <li>Mon Compte</li>
             </ul>
@@ -32,16 +33,15 @@
     </section>
 
     <section id="infos">
-        <h2>Les p'tites infos</h2>
-        <article>
-            <h3>Nos horaires</h3>
-            <p>Ouvert le XX de XXh à XXh !</p>
-        </article>
+        <h2>Les infos</h2>
 
+        {foreach from=$listeNews key=i item=n}
         <article>
-            <h3>New !</h3>
-            <p>Nouvelles aiguilles disponibles !</p>
+            <h3>{$n["titreNews"]}</h3>
+            <p>{$n["texteNews"]}</p>
         </article>
+        {/foreach}
+
     </section>
 </div>
 
