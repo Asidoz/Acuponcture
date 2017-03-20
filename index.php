@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 // SMARTY
 require("tpl/Smarty.class.php");
