@@ -12,7 +12,6 @@ spl_autoload_register(function ($classname) {
 // BDD
 $bddr = new SQL("read");
 $bddw = new SQL("write");
-
 // Page
 if(isset($_GET["p"])) {
 	$page = new Page($_GET["p"]);
@@ -20,10 +19,7 @@ if(isset($_GET["p"])) {
 	$page = new Page();
 }
 
-// Test
-/*$pathologie = new Pathologie(10,$bddr);
-echo $pathologie->getDesc();*/
-
+# Controlers
 if(file_exists("controlers/".$page->getPage().".php")) {
 	include("controlers/".$page->getPage().".php");
 } else { 
@@ -31,8 +27,10 @@ if(file_exists("controlers/".$page->getPage().".php")) {
 	exit;
 }
 
+# News
 include("controlers/news.php");
 
+# Affichage de la page
 $smarty->display("view/".$page->getPage().".html");
 
 ?>
