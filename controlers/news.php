@@ -1,4 +1,5 @@
 <?php
 
-$listeNews = $bddr->sql("SELECT titreNews,texteNews FROM news ORDER BY idNews DESC LIMIT 3");
-$smarty->assign("listeNews",$listeNews);
+$url = "http://www.santemagazine.fr/rss"; /* insérer ici l'adresse du flux RSS de votre choix */
+$rss = simplexml_load_file($url);
+$smarty->assign("newsRss",$rss);

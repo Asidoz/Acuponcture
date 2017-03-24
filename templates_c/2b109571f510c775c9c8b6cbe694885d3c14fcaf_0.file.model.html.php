@@ -1,26 +1,27 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-03-20 15:49:22
+/* Smarty version 3.1.30, created on 2017-03-24 13:16:29
   from "C:\wamp64\www\Acuponcture\view\model.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58cffa02c97225_15614494',
+  'unifunc' => 'content_58d51c2d886848_19397057',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2b109571f510c775c9c8b6cbe694885d3c14fcaf' => 
     array (
       0 => 'C:\\wamp64\\www\\Acuponcture\\view\\model.html',
-      1 => 1490024959,
+      1 => 1490361388,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:view/news.html' => 1,
   ),
 ),false)) {
-function content_58cffa02c97225_15614494 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58d51c2d886848_19397057 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -30,7 +31,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2855858cffa02a6fb31_07283367', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1050558d51c2d847132_25184060', 'title');
 ?>
 Association des Acupuncteurs soucieux de l'Accessibilité</title>
     <link rel="stylesheet" href="/styles/all.css">
@@ -61,14 +62,14 @@ Association des Acupuncteurs soucieux de l'Accessibilité</title>
 <div id="container">
     <section id="contenu">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2961558cffa02b21508_19796248', 'contenu');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2638258d51c2d85aad6_14557185', 'contenu');
 ?>
 
     </section>
 
     <section id="infos">
         <h2>Les infos</h2>
-
+        <!--
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['listeNews']->value, 'n', false, 'i');
 if ($_from !== null) {
@@ -86,6 +87,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['i']->value => $_smarty_tpl->tpl_vars[
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
+-->
+        <?php $_smarty_tpl->_subTemplateRender("file:view/news.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
 
     </section>
 </div>
@@ -98,14 +102,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 </body>
 </html><?php }
 /* {block 'title'} */
-class Block_2855858cffa02a6fb31_07283367 extends Smarty_Internal_Block
+class Block_1050558d51c2d847132_25184060 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'title'} */
 /* {block 'contenu'} */
-class Block_2961558cffa02b21508_19796248 extends Smarty_Internal_Block
+class Block_2638258d51c2d85aad6_14557185 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
