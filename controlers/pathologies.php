@@ -11,4 +11,3 @@ for ($i=0; $i < count($listePathos); $i++) {
 }
 
 $smarty->assign("listePathos",$listePathos);
-

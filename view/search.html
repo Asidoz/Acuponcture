@@ -3,8 +3,14 @@
 
 {block name=contenu}
 <p>
-<input type="text" value="{$valueSearch}"/> 
-<input type="button" value="GO" />
+	<input type="text" value="{$valueSearch}"/> 
+	<input type="button" value="GO" />
 </p>
+
+<ul>
+	{foreach from=$resultSearch key=k item=r}
+		<li><a href="/pathologie/{$r->toUrl()}.html">{$r->getDesc()}</a></li>
+	{/foreach}
+</ul>
 {/block}
 
