@@ -1,0 +1,7 @@
+{for $i=0 to 2}
+	{assign var=news value=" : "|explode:$newsRss->channel->item[$i]->title}
+	<article>
+		<h3>{$news[0]}</h3>
+		<p><a href="{$newsRss->channel->item[$i]->link}" target="_blank">{$news[1]}</a></p>
+	</article>
+{/for}
