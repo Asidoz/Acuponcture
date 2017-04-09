@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 // SMARTY
 require("tpl/Smarty.class.php");
@@ -12,12 +13,17 @@ spl_autoload_register(function ($classname) {
 // BDD
 $bddr = new SQL("read");
 $bddw = new SQL("write");
+
 // Page
 if(isset($_GET["p"])) {
 	$page = new Page($_GET["p"]);
 } else {
 	$page = new Page();
 }
+
+// User
+$user = new User($bddw);
+include("controlers/user.php");
 
 # Controlers
 if(file_exists("controlers/".$page->getPage().".php")) {
