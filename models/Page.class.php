@@ -21,7 +21,6 @@ class Page
 	public function getPage() {
 		return $this->p;
 	}
-
 }
 
 ?>
