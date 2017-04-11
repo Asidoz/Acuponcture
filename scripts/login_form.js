@@ -8,11 +8,10 @@ function checkMail()
     if ($("#email_addr2").val() =="" |$("#email_addr_repeat2").val() =="" ){       //Adresse non vide
         retour =  0;
     }
-    else if ( $("#email_addr_repeat2").val()!=  $("#email_addr2").val() )
-    {
-        $("#email_addr_repeat2").css('outline','none');
-        $("#email_addr_repeat2").css('border-color','red');
-        retour =  0;
+    else if ( $("#email_addr_repeat2").val()!=  $("#email_addr2").val() ) {
+        $("#email_addr_repeat2").css('outline', 'none');
+        $("#email_addr_repeat2").css('border-color', 'red');
+        retour = 0;
     }
     else {
         $("#email_addr_repeat2").css('outline', 'none');
@@ -73,4 +72,24 @@ $().ready(function() //Désactivation du bouton s'enregistrer si tous les inputs
 {
     $("#register-submit").prop("disabled", true);
 });
-s
+
+
+function checkMailAviability() {
+    var username= $("#email_addr_repeat2").val();
+
+    $('#email_status').text('Searching database.');
+
+    if(username != ''){
+        alert("test");
+        $.post('/ajax/verifEmailInscription.php',{ username: username }, function(data) {
+
+            $('#email_status').text(data);
+            alert('The server said ' + data);
+
+
+        });
+    } else {
+        $('#email_status').text('');
+    }
+
+};
