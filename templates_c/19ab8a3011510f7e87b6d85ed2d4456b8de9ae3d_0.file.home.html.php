@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-03-24 15:45:31
-  from "C:\wamp64\www\AcuponctureOk\Acuponcture\view\home.html" */
+/* Smarty version 3.1.30, created on 2017-03-07 14:52:55
+  from "C:\wamp64\www\Acu\Acuponcture\view\home.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58d53f1b25a534_72709516',
+  'unifunc' => 'content_58bec947a86480_36464020',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'c542c49d75a4d2690eafb2d87ae00462d4773935' => 
+    '19ab8a3011510f7e87b6d85ed2d4456b8de9ae3d' => 
     array (
-      0 => 'C:\\wamp64\\www\\AcuponctureOk\\Acuponcture\\view\\home.html',
-      1 => 1490366917,
+      0 => 'C:\\wamp64\\www\\Acu\\Acuponcture\\view\\home.html',
+      1 => 1488896879,
       2 => 'file',
     ),
   ),
@@ -21,18 +21,18 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:view/model.html' => 1,
   ),
 ),false)) {
-function content_58d53f1b25a534_72709516 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58bec947a86480_36464020 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2756758d53f1b2572d0_77742113', 'contenu');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1024858bec947a81260_11309041', 'contenu');
 $_smarty_tpl->inheritance->endChild();
 $_smarty_tpl->_subTemplateRender("file:view/model.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'contenu'} */
-class Block_2756758d53f1b2572d0_77742113 extends Smarty_Internal_Block
+class Block_1024858bec947a81260_11309041 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
