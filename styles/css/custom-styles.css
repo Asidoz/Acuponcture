@@ -186,6 +186,7 @@ margin-right: 10px !important;
 .navbar .nav > li a:hover{background: #55caed;box-shadow: none;color: #fff;}
 .navbar .nav > .active > a{background: #55caed;box-shadow: none;color: #fff;}
 .navbar .nav > .active > a:hover{box-shadow: none; background: none;}
+.navbar input {padding-top:10px;}
 
 .banner .carousel{margin-bottom: 0;}
 .banner .carousel-control {
