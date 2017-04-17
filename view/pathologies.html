@@ -13,8 +13,8 @@
 				<h3>{$p["nom"]}</h3>
 				<ul>
 			{/if}
-
-				<li><a href="/pathologie/{$p['idP']}.html">{$p["desc"]}</a></li>
+			
+				<li><a href="/pathologie/{$p['url']}.html">{$p["desc"]}</a></li>
 
 			{if $lastMer ne $p["nom"]}
 				{$lastMer=$p["nom"]}

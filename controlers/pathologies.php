@@ -6,5 +6,8 @@ $requete = 	"SELECT patho.idP, patho.desc, meridien.nom FROM patho
 
 $listePathos = $bddr->sql($requete);
 
-$smarty->assign("listePathos",$listePathos);
+for ($i=0; $i < count($listePathos); $i++) { 
+	$listePathos[$i]["url"] = Pathologie::url($listePathos[$i]["desc"],$listePathos[$i]["idP"]);
+}
 
+$smarty->assign("listePathos",$listePathos);

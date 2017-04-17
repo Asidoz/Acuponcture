@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-03-24 16:17:20
-  from "C:\wamp64\www\Acuponcture\view\model.html" */
+/* Smarty version 3.1.30, created on 2017-03-24 15:51:25
+  from "C:\wamp64\www\AcuponctureOk\Acuponcture\view\model.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58d54690e82604_64866353',
+  'unifunc' => 'content_58d5407dc09718_00827763',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '2b109571f510c775c9c8b6cbe694885d3c14fcaf' => 
+    '7895feca94a3e7b217483bbee7becad8b4479894' => 
     array (
-      0 => 'C:\\wamp64\\www\\Acuponcture\\view\\model.html',
-      1 => 1490372238,
+      0 => 'C:\\wamp64\\www\\AcuponctureOk\\Acuponcture\\view\\model.html',
+      1 => 1490370683,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:view/news.html' => 1,
   ),
 ),false)) {
-function content_58d54690e82604_64866353 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58d5407dc09718_00827763 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -33,10 +33,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1861358d54690e010a7_26894048', 'title');
-?>
-Association des Acupuncteurs soucieux de l'Accessibilité</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
        
@@ -127,7 +124,7 @@ Association des Acupuncteurs soucieux de l'Accessibilité</title>
                                       
                                           <section id="contenu">
                                         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1927458d54690e10b50_25813317', 'contenu');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2580858d5407dbbf5d2_73209056', 'contenu');
 ?>
 
                                              </section>
@@ -200,15 +197,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
     </body>
 </html>
 <?php }
-/* {block 'title'} */
-class Block_1861358d54690e010a7_26894048 extends Smarty_Internal_Block
-{
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-}
-}
-/* {/block 'title'} */
 /* {block 'contenu'} */
-class Block_1927458d54690e10b50_25813317 extends Smarty_Internal_Block
+class Block_2580858d5407dbbf5d2_73209056 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>

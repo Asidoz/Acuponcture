@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 // SMARTY
 require("tpl/Smarty.class.php");
@@ -20,10 +21,11 @@ if(isset($_GET["p"])) {
 	$page = new Page();
 }
 
-// Test
-/*$pathologie = new Pathologie(10,$bddr);
-echo $pathologie->getDesc();*/
+// User
+$user = new User($bddw);
+include("controlers/user.php");
 
+# Controlers
 if(file_exists("controlers/".$page->getPage().".php")) {
 	include("controlers/".$page->getPage().".php");
 } else { 
@@ -31,8 +33,10 @@ if(file_exists("controlers/".$page->getPage().".php")) {
 	exit;
 }
 
+# News
 include("controlers/news.php");
 
+# Affichage de la page
 $smarty->display("view/".$page->getPage().".html");
 
 ?>
