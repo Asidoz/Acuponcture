@@ -311,7 +311,7 @@ padding-left: 5px;
 .site-footer .block ul li a{color: #8099a1;  }
 .site-footer .block ul li a:hover{color: #fff; text-decoration: none;}
 .copy-rights{
-    padding: 40px 0; color: #8099a1; font-family: 'source_sans_proregular'; font-size: 14px; line-height: 26px;
+    padding: 20px 10px; color: #8099a1; font-family: 'source_sans_proregular'; font-size: 14px; line-height: 26px;
 }
 .copy-rights a{color: #8099a1;}
 .copy-rights span{color:#2abde9;}

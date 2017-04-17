@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="container">
-            <div class="menu">
+            <nav class="menu">
                 
                         <div class="navbar">
                             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -47,11 +47,15 @@
                             </a>
                             <div class="nav-collapse collapse">
                                 <ul class="nav">
-                                    <li class="active"><a href="/" title="">Accueil</a></li>
-                                    <li><a href="/page/pathologies.html" title="">Les Pathologies</a></li>
+                                    <li class="active"><a href="/" title="Accueil">Accueil</a></li>
+                                    <li><a href="/page/pathologies.html" title="Pathologies">Les Pathologies</a></li>
 
                                     <li><a href="#">Me soigner</a></li>
-                                    <li><a href="#">Mon Compte</a></li>
+                                    {if $user.isConnected eq 1}
+                                        <li><a href="/page/account.html" title="Mon compte">Mon Compte</a></li>
+                                    {else}
+                                        <li><a href="/page/login.html" title="Me connecter">Me Connecter</a></li>
+                                    {/if}
                       
                                 </ul>
                             </div>
@@ -72,7 +76,7 @@
           </label>
           </div>
                     
-            </div>
+            </nav>
             </div>
             <div class="container bg-white">
                 
@@ -114,19 +118,10 @@
                           <li class="span4">
                             <div>
                                 <div class="block">
-                                                               <section id="infos">
-        <h2>Les infos</h2>
-        <!--
-        {foreach from=$listeNews key=i item=n}
-        <article>
-            <h3>{$n["titreNews"]}</h3>
-            <p>{$n["texteNews"]}</p>
-        </article>
-        {/foreach}
--->
-        {include file="view/news.html"}
-    </section>
-                                    
+                                    <section id="infos">
+                                        <h2>Les infos</h2>
+                                        {include file="view/news.html"}
+                                    </section>
                                 </div>
                             </div>
                           </li>
