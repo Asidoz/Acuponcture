@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{block name=title}{/block}Association des Acupuncteurs soucieux de l'Accessibilité</title>
+    <link rel="stylesheet" href="/styles/all.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div>
+        <h1>Association des Acupuncteurs soucieux de l'Accessibilité</h1>
+
+        <!-- Menu de navigation -->
+        <nav>
+            <ul>
+                <li><a href="/" title="">Accueil</a></li>
+                <li><a href="/page/pathologies.html" title="">Les Pathologies</a></li>
+                {if $user_id eq -1}
+                    <li>Me connecter</li>
+                {else}
+                    <li>Mon Compte</li>
+                {/if}
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Contenu de la page -->
+<div id="container">
+    <section id="contenu">
+        {block name=contenu}No content{/block}
+    </section>
+
+    <section id="infos">
+        <h2>Les infos</h2>
+        <!--
+        {foreach from=$listeNews key=i item=n}
+        <article>
+            <h3>{$n["titreNews"]}</h3>
+            <p>{$n["texteNews"]}</p>
+        </article>
+        {/foreach}
+-->
+        {include file="view/news.html"}
+    </section>
+</div>
+
+<!-- Footer -->
+<footer>
+    <a href="/page/about.html">A propos</a> - &copy; 2017
+</footer>
+
+</body>
+</html>
