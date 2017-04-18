@@ -5,15 +5,15 @@
 
 <fieldset id="blockFormulaireConnexion">
     <legend>Connexion</legend>
-    <form  method="post" action="lib/main.php?variable=truc" id="formulaireConnexion">
+    <form  method="post" action="login.html" id="formulaireConnexion">
         <ul>
             <li>
-                <label for="email_addr">Adresse mail&nbsp;</label>
-                <input type="text" id="full_name" name="full_name" placeholder="jean.dupond@acupuncture.com" required>
+                <label for="email_addr1">Adresse mail&nbsp;</label>
+                <input type="email" id="email_addr1" placeholder="jean.dupond@acupuncture.com" required>
             </li>
             <li>
-                <label  for id="password-connexion"> Mot de passe &nbsp;</label>
-                <input  id="passord-connexion" type="password" name="psw-connexion" >
+                <label  for="password-connexion"> Mot de passe &nbsp;</label>
+                <input  id="password-connexion" type="password" name="psw-connexion" >
             </li>
             <li>
                 <input id="login-submit" type="submit" value="Se connecter" />
@@ -25,16 +25,18 @@
 
 <fieldset id="blockFormulaireInscription">
     <legend>Créer votre compte</legend>
-    <form  method="post" action="lib/main.php?variable=truc" id="formulaireInscription">
+    <form  method="post" action="login.php" id="formulaireInscription" onchange="return checkFormInscription()">
         <ul>
             <li>
-                <label for="email_addr">Adresse mail&nbsp;</label>
-                <input type="email" id="email_addr" name="email_addr" placeholder="jean.dupond@acupuncture.com" required>
+                <label for="email_addr2">Adresse mail&nbsp;</label>
+                <input type="email" id="email_addr2" name="email_addr2" placeholder="jean.dupond@acupuncture.com" required
+                        onkeyup="checkMail(this)">
+                <span id = "email_status">test </span>
             </li>
             <li>
-                <label for="email_addr_repeat">Confirmez l'adresse mail&nbsp;</label>
-                <input type="email" id="email_addr_repeat" name="email_addr_repeat"  placeholder="jean.dupond@acupuncture.com" required
-                       oninput="checkMail(this)">
+                <label for="email_addr_repeat2">Confirmez l'adresse mail&nbsp;</label>
+                <input type="email" id="email_addr_repeat2" name="email_addr_repeat2"  placeholder="jean.dupond@acupuncture.com" required
+                       onkeyup="checkMail(this)">
             </li>
             <li>
                 <label for="prenom">Prénom&nbsp;</label>
@@ -46,15 +48,16 @@
             </li>
 
             <li>
-                <label for id="password">Mot de passe &nbsp;</label>
-                <input type="password" name="psw">
+                <label for="password">Mot de passe &nbsp;</label>
+                <input type="password" id ="password" name="psw" required>
             </li>
             <li>
                 <label for="password_repeat">Confirmer votre mot de passe &nbsp;</label>
-                <input type="password" id="password_repeat" name="psw-repeat" required oninput="checkPassword(this)">
+                <input type="password" id="password_repeat" name="psw-repeat" required
+                       oninput="checkPassword(this)">
             </li>
             <li>
-                <input id="register-submit" type="submit" value="Créer votre compte" />
+                <input id="register-submit" type="button" value="Créer votre compte" onclick="checkMailAviability(this)"/>
             </li>
         </ul>
     </form>
