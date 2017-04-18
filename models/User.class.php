@@ -56,7 +56,7 @@ class User {
 	}
 
 	public function isConnected() {
-		return ($this->id != 0);
+		return ($this->id > 0);
 	}
 
 	public function getId() {
@@ -73,6 +73,12 @@ class User {
 
 	public function getPrenom() {
 		return $this->prenom;
+	}
+
+	public function getInfosSmarty() {
+		return array('isConnected' => $this->isConnected(), 
+					'nom' => $this->nom,
+					'prenom' => $this->prenom);
 	}
 
 };

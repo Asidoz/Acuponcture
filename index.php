@@ -24,17 +24,20 @@ if(isset($_GET["p"])) {
 // User
 $user = new User($bddw);
 include("controlers/user.php");
+$smarty->assign("user",$user->getInfosSmarty());
+
+# News
+include("controlers/news.php");
 
 # Controlers
 if(file_exists("controlers/".$page->getPage().".php")) {
 	include("controlers/".$page->getPage().".php");
-} else { 
-	echo "<h1>Erreur lors du chargement du Controler de la page '".$page->getPage()."'.</h1>";
+} else {
+	// Affichage page d'erreur de chargement.
+	$smarty->assign("nomPage",$page->getPage());
+	$smarty->display("view/error.html");
 	exit;
 }
-
-# News
-include("controlers/news.php");
 
 # Affichage de la page
 $smarty->display("view/".$page->getPage().".html");

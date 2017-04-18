@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-03-20 14:14:31
+/* Smarty version 3.1.30, created on 2017-03-24 16:07:31
   from "C:\wamp64\www\Acuponcture\view\pathologies.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58cfe3c79ab6f5_46234372',
+  'unifunc' => 'content_58d54443621037_48294905',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '86cbe6a2b6f17c52716684686137a7c3ba0ecefc' => 
     array (
       0 => 'C:\\wamp64\\www\\Acuponcture\\view\\pathologies.html',
-      1 => 1490017660,
+      1 => 1490371650,
       2 => 'file',
     ),
   ),
@@ -21,22 +21,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:view/model.html' => 1,
   ),
 ),false)) {
-function content_58cfe3c79ab6f5_46234372 (Smarty_Internal_Template $_smarty_tpl) {
+function content_58d54443621037_48294905 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_736658cfe3c78a9953_38587311', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_631258d5444356c404_46382371', 'title');
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1754358cfe3c79a3c64_09157230', 'contenu');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2451358d5444361d7b2_08183056', 'contenu');
 $_smarty_tpl->inheritance->endChild();
 $_smarty_tpl->_subTemplateRender("file:view/model.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'title'} */
-class Block_736658cfe3c78a9953_38587311 extends Smarty_Internal_Block
+class Block_631258d5444356c404_46382371 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -45,7 +45,7 @@ Pathologies - <?php
 }
 /* {/block 'title'} */
 /* {block 'contenu'} */
-class Block_1754358cfe3c79a3c64_09157230 extends Smarty_Internal_Block
+class Block_2451358d5444361d7b2_08183056 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -68,7 +68,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars[
 </h3>
 				<ul>
 			<?php }?>
-
+			
 				<li><a href="/pathologie/<?php echo $_smarty_tpl->tpl_vars['p']->value['url'];?>
 .html"><?php echo $_smarty_tpl->tpl_vars['p']->value["desc"];?>
 </a></li>
