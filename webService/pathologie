@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE pathologie [
+        <!ELEMENT pathologie (id_pathologie,typ,description_pathologie,mer,liste_symptome,liste_mot_cle)>
+        <!ELEMENT id_pathologie (#PCDATA)>
+        <!ELEMENT typ (#PCDATA)>
+        <!ELEMENT description_pathologie (#PCDATA)>
+
+        <!ELEMENT mer (code,nom,element,yin)>
+        <!ELEMENT code (#PCDATA)>
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT element (#PCDATA)>
+        <!ELEMENT yin (#PCDATA)>
+
+        <!ELEMENT liste_symptome (symptome+)>
+        <!ELEMENT symptome (id_symptome,description_symptome,symptome_aggravation)>
+        <!ELEMENT id_symptome (#PCDATA)>
+        <!ELEMENT description_symptome (#PCDATA)>
+        <!ELEMENT symptome_aggravation (#PCDATA)>
+
+        <!ELEMENT liste_mot_cle (mot_cle+)>
+        <!ELEMENT mot_cle (id_mot_cle,name_mot_cle)>
+        <!ELEMENT id_mot_cle (#PCDATA)>
+        <!ELEMENT name_mot_cle (#PCDATA)>
+
+        ]>
+
+<pathologie>
+    <id_pathologie>1</id_pathologie>
+    <typ>me</typ>
+    <description_pathologie>méridien du poumon externe</description_pathologie>
+    <mer>
+        <code>P</code>
+        <nom>Poumon</nom>
+        <element>m</element>
+        <yin>1</yin>
+    </mer>
+    <liste_symptome>
+        <symptome>
+            <id_symptome> </id_symptome>
+            <description_symptome> </description_symptome>
+            <symptome_aggravation> </symptome_aggravation>
+        </symptome>
+    </liste_symptome>
+    <liste_mot_cle>
+        <mot_cle>
+            <id_mot_cle></id_mot_cle>
+            <name_mot_cle></name_mot_cle>
+        </mot_cle>
+    </liste_mot_cle>
+</pathologie>
