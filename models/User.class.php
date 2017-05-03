@@ -11,7 +11,6 @@ class User {
 
 	function __construct($bddCo, $emailCo="", $pwdCo="") {
 		$this->bdd = $bddCo;
-
 		if($emailCo != "" && $pwdCo != "") {
 
 			$resultCo = $this->bdd->sql("SELECT * FROM users WHERE email='".$emailCo."' AND password='".$this->hashPwd($emailCo,$pwdCo)."'");
@@ -40,6 +39,16 @@ class User {
 			}
 		}
 	}
+
+	public function createUser ($bddCo,$emailCo,$pwdCo, $nom, $prenom  ){
+        $resultCo = $this->bdd->sql("INSERT INTO users (email, password, nom, prenom) VALUES ('".$emailCo."','".$this->hashPwd($emailCo,$pwdCo)."','".$nom."','".$prenom."'");
+        $this->id     = $this->bdd->sql->lastInsertId();
+        $this->email  = $emailCo;
+        $this->nom    = $nom;
+        $this->prenom = $prenom;
+
+        $_SESSION["AASA_id"] = $this->id;
+    }
 
 	public function disconnect() {
 		unset($_SESSION["AASA_id"]);

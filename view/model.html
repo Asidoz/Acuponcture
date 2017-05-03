@@ -9,13 +9,14 @@
         <title>{block name=title}{/block}Association des Acupuncteurs soucieux de l'Accessibilité</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-       
         <link rel="stylesheet" href="/styles/css/bootstrap.css">
         <link rel="stylesheet" href="/styles/css/bootstrap-responsive.css">
         <link rel="stylesheet" href="/styles/css/custom-styles.css">
         <link rel="stylesheet" href="/styles/css/font-awesome.css">
         <link rel="stylesheet" href="/styles/css/component.css">
         <link rel="stylesheet" href="/styles/css/font-awesome-ie7.css">
+        <script src="../scripts/jquery-3.2.0.min.js"></script>
+        <script src="../scripts/login_form.js"></script>
     </head>
     <body>
             <div class="header-wrapper">
@@ -52,7 +53,7 @@
 
                                     <li><a href="#">Me soigner</a></li>
                                     {if $user.isConnected eq 1}
-                                        <li><a href="/page/account.html" title="Mon compte">Mon Compte</a></li>
+                                        <li><a href="/page/login.html" title="Mon compte">Mon Compte</a></li>
                                     {else}
                                         <li><a href="/page/login.html" title="Me connecter">Me Connecter</a></li>
                                     {/if}

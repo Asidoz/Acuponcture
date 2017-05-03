@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-17 12:08:44
+/* Smarty version 3.1.30, created on 2017-05-03 11:57:01
   from "C:\wamp64\www\Acuponcture\view\model.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58f4b04c2f33f8_76705694',
+  'unifunc' => 'content_5909c58da770b5_08648134',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2b109571f510c775c9c8b6cbe694885d3c14fcaf' => 
     array (
       0 => 'C:\\wamp64\\www\\Acuponcture\\view\\model.html',
-      1 => 1492430879,
+      1 => 1493812408,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:view/news.html' => 1,
   ),
 ),false)) {
-function content_58f4b04c2f33f8_76705694 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5909c58da770b5_08648134 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -34,18 +34,23 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_535358f4b04c2c3f54_64903539', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_320995909c58da55228_45908286', 'title');
 ?>
 Association des Acupuncteurs soucieux de l'Accessibilité</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-       
         <link rel="stylesheet" href="/styles/css/bootstrap.css">
         <link rel="stylesheet" href="/styles/css/bootstrap-responsive.css">
         <link rel="stylesheet" href="/styles/css/custom-styles.css">
         <link rel="stylesheet" href="/styles/css/font-awesome.css">
         <link rel="stylesheet" href="/styles/css/component.css">
         <link rel="stylesheet" href="/styles/css/font-awesome-ie7.css">
+        <?php echo '<script'; ?>
+ src="../scripts/jquery-3.2.0.min.js"><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+ src="../scripts/login_form.js"><?php echo '</script'; ?>
+>
     </head>
     <body>
             <div class="header-wrapper">
@@ -82,7 +87,7 @@ Association des Acupuncteurs soucieux de l'Accessibilité</title>
 
                                     <li><a href="#">Me soigner</a></li>
                                     <?php if ($_smarty_tpl->tpl_vars['user']->value['isConnected'] == 1) {?>
-                                        <li><a href="/page/account.html" title="Mon compte">Mon Compte</a></li>
+                                        <li><a href="/page/login.html" title="Mon compte">Mon Compte</a></li>
                                     <?php } else { ?>
                                         <li><a href="/page/login.html" title="Me connecter">Me Connecter</a></li>
                                     <?php }?>
@@ -132,7 +137,7 @@ Association des Acupuncteurs soucieux de l'Accessibilité</title>
                                       
                                           <section id="contenu">
                                         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_548658f4b04c2e00c7_21293530', 'contenu');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_157125909c58da6bbe7_19664437', 'contenu');
 ?>
 
                                              </section>
@@ -186,14 +191,14 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_548658f4b04c2e00c7
 </html>
 <?php }
 /* {block 'title'} */
-class Block_535358f4b04c2c3f54_64903539 extends Smarty_Internal_Block
+class Block_320995909c58da55228_45908286 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'title'} */
 /* {block 'contenu'} */
-class Block_548658f4b04c2e00c7_21293530 extends Smarty_Internal_Block
+class Block_157125909c58da6bbe7_19664437 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
