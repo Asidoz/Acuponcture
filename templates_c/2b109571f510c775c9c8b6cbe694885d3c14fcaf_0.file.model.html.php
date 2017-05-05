@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.30, created on 2017-05-03 11:57:01
+=======
+/* Smarty version 3.1.30, created on 2017-05-05 07:37:28
+>>>>>>> origin/Florian
   from "C:\wamp64\www\Acuponcture\view\model.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
+<<<<<<< HEAD
   'unifunc' => 'content_5909c58da770b5_08648134',
+=======
+  'unifunc' => 'content_590c2bb8d7af02_83016572',
+>>>>>>> origin/Florian
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2b109571f510c775c9c8b6cbe694885d3c14fcaf' => 
     array (
       0 => 'C:\\wamp64\\www\\Acuponcture\\view\\model.html',
+<<<<<<< HEAD
       1 => 1493812408,
+=======
+      1 => 1493969840,
+>>>>>>> origin/Florian
       2 => 'file',
     ),
   ),
@@ -21,7 +33,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:view/news.html' => 1,
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5909c58da770b5_08648134 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_590c2bb8d7af02_83016572 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> origin/Florian
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -34,7 +50,11 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title><?php 
+<<<<<<< HEAD
 $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_320995909c58da55228_45908286', 'title');
+=======
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14783590c2bb8c39d19_58920743', 'title');
+>>>>>>> origin/Florian
 ?>
 Association des Acupuncteurs soucieux de l'Accessibilité</title>
         <meta name="description" content="">
@@ -137,7 +157,11 @@ Association des Acupuncteurs soucieux de l'Accessibilité</title>
                                       
                                           <section id="contenu">
                                         <?php 
+<<<<<<< HEAD
 $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_157125909c58da6bbe7_19664437', 'contenu');
+=======
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_30860590c2bb8d5b6f7_06132689', 'contenu');
+>>>>>>> origin/Florian
 ?>
 
                                              </section>
@@ -191,14 +215,22 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_157125909c58da6bbe
 </html>
 <?php }
 /* {block 'title'} */
+<<<<<<< HEAD
 class Block_320995909c58da55228_45908286 extends Smarty_Internal_Block
+=======
+class Block_14783590c2bb8c39d19_58920743 extends Smarty_Internal_Block
+>>>>>>> origin/Florian
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'title'} */
 /* {block 'contenu'} */
+<<<<<<< HEAD
 class Block_157125909c58da6bbe7_19664437 extends Smarty_Internal_Block
+=======
+class Block_30860590c2bb8d5b6f7_06132689 extends Smarty_Internal_Block
+>>>>>>> origin/Florian
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
