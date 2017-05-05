@@ -333,3 +333,5 @@ padding-left: 5px;
 .container div.twoColumns:nth-child(1) { float: left; }
 .container div.twoColumns:nth-child(2) { float: right; }
 .errorTxt { color:red; }
+.navbar #search_input { margin-top: 16px; margin-left: 30px; margin-bottom: 0; }
+.navbar #search_result { display: none; position: absolute; max-height: 75px; width: 220px; background-color: white; margin-left: 30px; overflow: auto; }

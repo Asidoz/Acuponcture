@@ -33,6 +33,8 @@ function checkInscr() {
 }
 
 function loginUser() {
+	var btn = $("#login_submit");
+	btn.prop("disabled",true);
 	$.post("../ajax/loginUser.php",
 	{
 		e:$("#login_email").val(),
@@ -42,6 +44,7 @@ function loginUser() {
 			document.location.href="/index.php";
 		} else {
 			$("#login_form > .errorTxt").html(data);
+			btn.prop("disabled",false);
 		}
 	});
 	return false;
