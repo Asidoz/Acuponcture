@@ -1,5 +1,10 @@
 <?php
 
+require("../models/SQL.class.php");
+$bddr = new SQL("read",1);
+
+require("../models/Pathologie.class.php");
+
 // Récupération id patologie
 if(isset($_GET["patho"]) && is_numeric($_GET["patho"])) {
     $patho = new Pathologie($_GET["patho"],$bddr);
@@ -12,13 +17,13 @@ $pathologie = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"utf-8\" ?><
 
 
 $pathologie->addChild('id_pathologie', $_GET["patho"]);
-$pathologie->addChild('typ', $patho.getType());
-$pathologie->addChild('description_pathologie', $patho.getDesc());
+$pathologie->addChild('typ', $patho->getType());
+$pathologie->addChild('description_pathologie', $patho->getDesc());
 $mer=$pathologie->addChild('mer',"");
 
 $requete = 	"SELECT patho.idP, patho.type, patho.desc, meridien.code,meridien.nom,meridien.element,meridien.yin FROM patho
 			INNER JOIN meridien ON patho.mer = meridien.code
-			WHERE patho.idP='".$patho.getMer()."'";
+			WHERE patho.idP='".$patho->getMer()."'";
 
 $meridien_res = array();
 $this->$meridien_res = $this->bdd->sql($requete);
