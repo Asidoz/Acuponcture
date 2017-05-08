@@ -61,6 +61,12 @@ class Pathologie {
 	public function getSymptomes() {
 		return $this->symptomes;
 	}
+	public function getType(){
+	    return $this->type;
+    }
+    public function getMer(){
+	    return $this->mer;
+	}
 
 }
 
