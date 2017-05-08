@@ -7,6 +7,7 @@ $smarty = new Smarty();
 // BDD
 require("../models/SQL.class.php");
 $bddr = new SQL("read",1);
+
 if(isset($_POST["e"])) {
 	$emailTest = $_POST["e"];
 

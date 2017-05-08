@@ -34,13 +34,9 @@ class SQL
 		return $reponse->fetchAll();
 	}
 
-	public function test() {
-		$reponse = $this->bdd->query('SELECT nom FROM meridien');
-		while($donnees = $reponse->fetch()) {
-			echo $donnees["nom"]."<br />";
-		}
+	public function insert($requete) {
+		$this->bdd->exec($requete);
 	}
-
 }
 
 ?>

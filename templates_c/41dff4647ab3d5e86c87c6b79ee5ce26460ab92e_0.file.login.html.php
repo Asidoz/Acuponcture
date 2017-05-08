@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-05-05 14:00:38
+/* Smarty version 3.1.30, created on 2017-05-08 19:29:47
   from "C:\wamp64\www\Acuponcture\view\login.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_590c8586025451_10232692',
+  'unifunc' => 'content_5910c72b0321b1_97440800',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '41dff4647ab3d5e86c87c6b79ee5ce26460ab92e' => 
     array (
       0 => 'C:\\wamp64\\www\\Acuponcture\\view\\login.html',
-      1 => 1493992270,
+      1 => 1494271775,
       2 => 'file',
     ),
   ),
@@ -21,18 +21,18 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:view/model.html' => 1,
   ),
 ),false)) {
-function content_590c8586025451_10232692 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5910c72b0321b1_97440800 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14579590c85860202a6_00304658', 'contenu');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_275705910c72b02d3f0_67104977', 'contenu');
 $_smarty_tpl->inheritance->endChild();
 $_smarty_tpl->_subTemplateRender("file:view/model.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'contenu'} */
-class Block_14579590c85860202a6_00304658 extends Smarty_Internal_Block
+class Block_275705910c72b02d3f0_67104977 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -65,31 +65,32 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <fieldset>
         <legend>Créer votre compte</legend>
         <form method="post" action="#" id="inscr_form" onSubmit="return checkInscr();">
+            <span class="errorTxt" style="padding-left: 50px;"></span>
             <ul>
                 <li>
                     <label for="email_inscr">Adresse mail</label>
-                    <input type="email" id="email_inscr" name="email_inscr" placeholder="jean.dupond@acupuncture.com" required />
+                    <input value="jean@dupont.fr" type="email" id="email_inscr" name="email_inscr" placeholder="jean.dupond@acupuncture.com" required />
                 </li>
                 <li>
                     <label for="email_confirm_inscr">Confirmation adresse mail</label>
-                    <input type="email" id="email_confirm_inscr" name="email_confirm_inscr"  placeholder="jean.dupond@acupuncture.com" />
+                    <input value="jean@dupont.fr" type="email" id="email_confirm_inscr" name="email_confirm_inscr"  placeholder="jean.dupond@acupuncture.com" />
                 </li>
                 <li>
                     <label for="prenom_inscr">Prénom</label>
-                    <input type="text" id="prenom_inscr" name="prenom_inscr" placeholder="Jean" required />
+                    <input value="Jean" type="text" id="prenom_inscr" name="prenom_inscr" placeholder="Jean" required />
                 </li>
                 <li>
                     <label for="nom_inscr">Nom</label>
-                    <input type="text" id="nom_inscr" name="nom_inscr" placeholder="Dupond" required />
+                    <input value="Dupont" type="text" id="nom_inscr" name="nom_inscr" placeholder="Dupond" required />
                 </li>
 
                 <li>
-                    <label for id="pwd_inscr">Mot de passe</label>
-                    <input type="password" name="pwd_inscr" id="pwd_inscr" required />
+                    <label for="pwd_inscr">Mot de passe</label>
+                    <input value="jean" type="password" name="pwd_inscr" id="pwd_inscr" required />
                 </li>
                 <li>
                     <label for="pwd_confirm_inscr">Confirmation mot de passe</label>
-                    <input type="password" id="pwd_confirm_inscr" name="pwd_confirm_inscr" required />
+                    <input value="jean" type="password" id="pwd_confirm_inscr" name="pwd_confirm_inscr" required />
                 </li>
                 <li>
                     <input id="register_submit" type="submit" value="Créer votre compte" />

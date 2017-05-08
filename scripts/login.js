@@ -8,28 +8,41 @@ function checkLoginForm() {
 } 
 
 function checkInscr() {
-	var ok = true;
-	var endAjax = false;
 	var error = "";
-	if($("#email_inscr").val() != $("#email_confirm_inscr").val() != "") {
-		ok = false;
-		error += "Erreur sur la confirmation d'adresse mail.\n";
+	var btn = $("#register_submit");
+	btn.prop("disabled",true);
+
+	var email = $("#email_inscr").val();
+	var emailConf = $("#email_confirm_inscr").val();
+	var pwd = $("#pwd_inscr").val();
+	var pwdConf = $("#pwd_confirm_inscr").val();
+	var prenom = $("#prenom_inscr").val();
+	var nom = $("#nom_inscr").val();
+
+	if(email != emailConf) {
+		error = "Erreur sur la confirmation d'adresse mail.\n";
 	}
-	if($("#login_email").val() != $("#login_pwd").val() != "") {
-		ok = false;
-		error += "Erreur sur la confirmation de mot de passe.\n";
-	}
-	/*if(ok == true) {
-		$.post("../ajax/verifEmailDispo.php",{e:$("#email_inscr").val()},function(data) {
-			alert(data);
-			endAjax = true;
-			if(data != 0) {
-				ok = false;
+	else if(pwd != pwdConf) {
+		error = "Erreur sur la confirmation de mot de passe.\n";
+	} 
+	else {
+		$.post("../ajax/addUser.php",
+		{
+			e:email,
+			n:nom,
+			p:prenom,
+			m:pwd
+		},function(data) {
+			if(data == "1") {
+				document.location.href="/";
+			} else {				error = "Erreur lors de la création du compte.";
+				$("#inscr_form > .errorTxt").html(error);
+				btn.prop("disabled",false);
 			}
-		});	
+		});
 	}
-	while(ok==true && endAjax==false) { }*/
-	return ok;
+	$("#inscr_form > .errorTxt").html(error);
+	return false;
 }
 
 function loginUser() {
