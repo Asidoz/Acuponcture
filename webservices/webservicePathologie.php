@@ -12,7 +12,6 @@ if(isset($_GET["patho"]) && is_numeric($_GET["patho"])) {
     $patho = new Pathologie();
 }
 
-$xml = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"utf-8\" ?><Personne></Personne>");
 $pathologie = new SimpleXMLElement("<?xml version=\"1.0\" encoding=\"utf-8\" ?><pathologie></pathologie>");$i=1;
 
 
@@ -23,13 +22,12 @@ $mer=$pathologie->addChild('mer',"");
 
 $requete = 	"SELECT patho.idP, patho.type, patho.desc, meridien.code,meridien.nom,meridien.element,meridien.yin FROM patho
 			INNER JOIN meridien ON patho.mer = meridien.code
-			WHERE patho.idP='".$patho->getMer()."'";
+			WHERE patho.idP='".$_GET["patho"]."'";
 
-$meridien_res = array();
-$this->$meridien_res = $this->bdd->sql($requete);
-$p = $result[0];
+$meridien_res =  $bddr->sql($requete);
+$p = $meridien_res[0];
 
-$mer->addChild('code',  $p["code"]);
+$mer->addChild('code',$p["code"]);
 $mer->addChild('nom', $p["nom"]);
 $mer->addChild('yin', $p["yin"]);
 
@@ -38,15 +36,15 @@ $mer->addChild('yin', $p["yin"]);
 $requete = 	"SELECT symptPatho.aggr,symptome.idS, symptome.desc FROM patho
 			INNER JOIN symptPatho on patho.idP=symptPatho.idP
 			INNER JOIN symptome on symptPatho.idS=symptome.idS
-			WHERE patho.idP='".$patho.getMer()."'";
+			WHERE patho.idP='".$_GET["patho"]."'";
 
 
-$liste_symptome_res=$pathologie->addChild('liste_symptome',"");
+$liste_symptome=$pathologie->addChild('liste_symptome',"");
 
 $liste_symptome_res = array();
-$this->$liste_symptome_res = $this->bdd->sql($requete);
+$liste_symptome_res = $bddr->sql($requete);
 
-for ($i=0; $i < count($liste_symptome); $i++) {
+for ($i=0; $i < count($liste_symptome_res); $i++) {
     $symptome=$liste_symptome->addChild('symptome',"");
     $symptome->addChild('id_symptome', $liste_symptome_res[$i]["idS"]);
     $symptome->addChild('description_symptome',$liste_symptome_res[$i]["desc"]);
@@ -61,19 +59,21 @@ $requete = 	"SELECT DISTINCT keywords.name , keywords.idK FROM patho
 			INNER JOIN symptome on symptPatho.idS=symptome.idS
 			INNER JOIN keySympt on symptome.idS= keySympt.idS
 			INNER JOIN keywords on keySympt.idK= keywords.idK
-			WHERE patho.idP='".$patho.getMer()."'";
+			WHERE patho.idP='".$_GET["patho"]."'";
 
 
 $liste_mot_cle=$pathologie->addChild('liste_mot_cle',"");
 
-$liste_mot_cle_res= array();
-$this->$liste_mot_cle_res = $this->bdd->sql($requete);
 
-for ($i=0; $i < count($liste_symptome); $i++) {
+$liste_mot_cle_res = $bddr->sql($requete);
+
+for ($i=0; $i < count($liste_mot_cle_res); $i++) {
     $mot_cle=$liste_mot_cle->addChild('mot_cle',"");
     $mot_cle->addChild('id_mot_cle', $liste_mot_cle_res[$i]["idK"]);
     $mot_cle->addChild('name_mot_cle', $liste_mot_cle_res[$i]["name"]);
 }
 
-print($pathologie->asXML());
 
+Header('Content-type: text/xml');
+
+print($pathologie->asXML());
