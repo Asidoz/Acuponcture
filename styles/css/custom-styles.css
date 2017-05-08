@@ -334,5 +334,5 @@ padding-left: 5px;
 .container div.twoColumns:nth-child(2) { float: right; }
 .errorTxt { color:red; }
 .navbar #search_input { margin-top: 16px; margin-left: 30px; margin-bottom: 0; }
-.navbar #search_result { display: block; position: absolute; max-height: 75px; width: 220px; background-color: white; margin-left: 30px; overflow: auto; }
-.navbar #search_result a { color : black; padding: 0; border: none; text-shadow: none; }
+.navbar #search_result { display: none; position: absolute; max-height: 75px; width: 220px; background-color: white; margin-left: 30px; overflow: auto; }
+.navbar #search_result a { color: black; padding: 0; border: none; text-shadow: none; }
