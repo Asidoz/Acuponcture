@@ -46,7 +46,8 @@ class Pathologie {
 
 		$name = strtr($name, $alphabet);
 		$name = str_replace(' ', '-', $name);
-		return $name."-".$id;
+		//return $name."-".$id;
+		return "/patho/".$id."/";
 	}
 
 	public function toUrl() {

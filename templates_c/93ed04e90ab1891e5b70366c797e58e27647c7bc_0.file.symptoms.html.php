@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-03-24 16:42:27
+/* Smarty version 3.1.30, created on 2017-05-05 14:01:29
   from "C:\wamp64\www\Acuponcture\view\symptoms.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58d54c73d90bb6_25327298',
+  'unifunc' => 'content_590c85b92a3506_52162561',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -21,22 +21,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:view/model.html' => 1,
   ),
 ),false)) {
-function content_58d54c73d90bb6_25327298 (Smarty_Internal_Template $_smarty_tpl) {
+function content_590c85b92a3506_52162561 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1601058d54c73d55fe1_75539101', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6484590c85b9253674_18376315', 'title');
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2380358d54c73d8d9f5_64814094', 'contenu');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4349590c85b929ec22_89144140', 'contenu');
 $_smarty_tpl->inheritance->endChild();
 $_smarty_tpl->_subTemplateRender("file:view/model.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 2, false);
 }
 /* {block 'title'} */
-class Block_1601058d54c73d55fe1_75539101 extends Smarty_Internal_Block
+class Block_6484590c85b9253674_18376315 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 echo $_smarty_tpl->tpl_vars['nomPatho']->value;?>
@@ -45,7 +45,7 @@ echo $_smarty_tpl->tpl_vars['nomPatho']->value;?>
 }
 /* {/block 'title'} */
 /* {block 'contenu'} */
-class Block_2380358d54c73d8d9f5_64814094 extends Smarty_Internal_Block
+class Block_4349590c85b929ec22_89144140 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>

@@ -6,9 +6,15 @@ class SQL
 	private $bdd;
 	private $infos;
 
-	function __construct($mode) {
+	function __construct($mode,$ajax=0) {
 
-		$this->infos = parse_ini_file("conf/bdd.ini");
+		if($ajax) {
+			$pathConf = "../conf/bdd.ini";
+		} else {
+			$pathConf = "conf/bdd.ini";
+		}
+
+		$this->infos = parse_ini_file($pathConf);
 
 		if($mode == "write") {
 			$user = $this->infos["userw"];
@@ -28,13 +34,9 @@ class SQL
 		return $reponse->fetchAll();
 	}
 
-	public function test() {
-		$reponse = $this->bdd->query('SELECT nom FROM meridien');
-		while($donnees = $reponse->fetch()) {
-			echo $donnees["nom"]."<br />";
-		}
+	public function insert($requete) {
+		$this->bdd->exec($requete);
 	}
-
 }
 
 ?>

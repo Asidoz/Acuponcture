@@ -16,6 +16,10 @@
         <link rel="stylesheet" href="/styles/css/font-awesome.css">
         <link rel="stylesheet" href="/styles/css/component.css">
         <link rel="stylesheet" href="/styles/css/font-awesome-ie7.css">
+
+        <script src="/scripts/jquery.js"></script>
+        <script src="/scripts/login.js"></script>
+        <script src="/scripts/search.js"></script>
     </head>
     <body>
             <div class="header-wrapper">
@@ -50,13 +54,18 @@
                                     <li class="active"><a href="/" title="Accueil">Accueil</a></li>
                                     <li><a href="/page/pathologies.html" title="Pathologies">Les Pathologies</a></li>
 
-                                    <li><a href="#">Me soigner</a></li>
                                     {if $user.isConnected eq 1}
                                         <li><a href="/page/account.html" title="Mon compte">Mon Compte</a></li>
+                                        <li>   
+                                            <input type="text" placeholder="Recherche..." id="search_input" onkeyup="recherche();" />
+                                            <div id="search_result">
+                                                <br>
+                                            </div>
+                                        </li>
                                     {else}
                                         <li><a href="/page/login.html" title="Me connecter">Me Connecter</a></li>
                                     {/if}
-                                    <li><input type="text" placeholder="Recherche..." /></li>
+                                    
                       
                                 </ul>
                             </div>

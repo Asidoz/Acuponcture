@@ -5,8 +5,6 @@ if(isset($_GET["s"])) {
 } else {
 	$valueSearch = "";
 }
-print_r($_GET);
-echo $_GET["s"];
 
 $smarty->assign("valueSearch",$valueSearch);
 

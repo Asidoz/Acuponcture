@@ -41,6 +41,19 @@ class User {
 		}
 	}
 
+	public function create($nNom,$nPrenom,$nEmail,$nPassword) {
+		$result = false;
+		$verifMail = count($this->bdd->sql("SELECT email FROM USERS WHERE email = '".$nEmail."'"));
+		if($verifMail == 0) {
+			echo "INSERT INTO USERS (email, nom, prenom, password)
+							VALUES ('".$nEmail."','".$nNom."','".$nPrenom."','".$this->hashPwd($nEmail,$nPassword)."')";
+			$this->bdd->insert("INSERT INTO USERS (email, nom, prenom, password)
+							VALUES ('".$nEmail."','".$nNom."','".$nPrenom."','".$this->hashPwd($nEmail,$nPassword)."')");
+			$result = true;
+		}
+		return $result;
+	}
+
 	public function disconnect() {
 		unset($_SESSION["AASA_id"]);
 		$this->id     = -1;
