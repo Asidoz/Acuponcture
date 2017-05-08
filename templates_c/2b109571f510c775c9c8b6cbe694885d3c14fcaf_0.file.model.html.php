@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-05-08 20:05:06
+/* Smarty version 3.1.30, created on 2017-05-08 21:14:43
   from "C:\wamp64\www\Acuponcture\view\model.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5910cf72552393_07092975',
+  'unifunc' => 'content_5910dfc398fb18_44528247',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2b109571f510c775c9c8b6cbe694885d3c14fcaf' => 
     array (
       0 => 'C:\\wamp64\\www\\Acuponcture\\view\\model.html',
-      1 => 1494273901,
+      1 => 1494278066,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:view/news.html' => 1,
   ),
 ),false)) {
-function content_5910cf72552393_07092975 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5910dfc398fb18_44528247 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -34,7 +34,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title><?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_275675910cf724e3042_54723464', 'title');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_91175910dfc384fec7_40357373', 'title');
 ?>
 Association des Acupuncteurs soucieux de l'Accessibilité</title>
         <meta name="description" content="">
@@ -147,7 +147,7 @@ Association des Acupuncteurs soucieux de l'Accessibilité</title>
                                       
                                           <section id="contenu">
                                         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_234845910cf72526a07_22121847', 'contenu');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_123065910dfc38e8b87_55232199', 'contenu');
 ?>
 
                                              </section>
@@ -201,14 +201,14 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_234845910cf72526a0
 </html>
 <?php }
 /* {block 'title'} */
-class Block_275675910cf724e3042_54723464 extends Smarty_Internal_Block
+class Block_91175910dfc384fec7_40357373 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'title'} */
 /* {block 'contenu'} */
-class Block_234845910cf72526a07_22121847 extends Smarty_Internal_Block
+class Block_123065910dfc38e8b87_55232199 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>

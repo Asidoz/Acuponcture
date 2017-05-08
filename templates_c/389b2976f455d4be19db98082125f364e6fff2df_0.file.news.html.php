@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-05-08 20:07:04
+/* Smarty version 3.1.30, created on 2017-05-08 21:19:22
   from "C:\wamp64\www\Acuponcture\view\news.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5910cfe8b465a4_41692878',
+  'unifunc' => 'content_5910e0da95aca1_29433280',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '389b2976f455d4be19db98082125f364e6fff2df' => 
     array (
       0 => 'C:\\wamp64\\www\\Acuponcture\\view\\news.html',
-      1 => 1494274021,
+      1 => 1494278361,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5910cfe8b465a4_41692878 (Smarty_Internal_Template $_smarty_tpl) {
-if (count($_smarty_tpl->tpl_vars['newsRss']->value) > 1) {?>
+function content_5910e0da95aca1_29433280 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 	<?php
 $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable(null, $_smarty_tpl->isRenderingCache);$_smarty_tpl->tpl_vars['i']->step = 1;$_smarty_tpl->tpl_vars['i']->total = (int) ceil(($_smarty_tpl->tpl_vars['i']->step > 0 ? 2+1 - (0) : 0-(2)+1)/abs($_smarty_tpl->tpl_vars['i']->step));
 if ($_smarty_tpl->tpl_vars['i']->total > 0) {
@@ -38,8 +38,5 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration == 1
 		</article>
 	<?php }
 }
-?>
-
-<?php }
 }
 }
